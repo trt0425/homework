@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=UTF-8>
+</head>
+
+<body>
+    <P>
+        <h1>水仙花數</h1>
+    </p>
+    <script>
+        var x, y, z;
+
+            for (i = 100; i < 1000; i++) {
+                x = parseInt(i / 100);
+                y = parseInt(i % 100 / 10);
+                z = parseInt(i % 10);
+
+                if (i == Math.pow(x, 3) + Math.pow(y, 3) + Math.pow(z, 3)) {
+                    document.write(i +"<br>");
+                }
+
+            }
+
+
+    </script>
+
+
+
+</body>
+
+</html>
