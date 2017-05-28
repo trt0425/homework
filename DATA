@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>DAY</title>
+    <script type="text/javascript" src=""></script>
+</head>
+
+<body>
+    <P>算算日子</P>
+    
+    <script>
+        function Onclick() {
+            var Daytext = document.getElementById("text").value;
+            var Day = new Date(Daytext);
+            var Daystat = new Date(Daytext);
+            Daystat.setMonth(0); //
+            Daystat.setDate(2);
+            var X = Daystat.getTime();
+            var Y = Day.getTime();
+            Dayend = ((Y - X) / 86400000);
+            out.value = Dayend
+
+        }
+    </script>
+    <input type="date" id="text" name="text">
+    <input type="button" value="Hit" onclick="Onclick()">
+    <P>第</P><input type="text" id= "out"><P>天</P>
+</body>
+
+</html>
